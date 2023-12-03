@@ -11,15 +11,22 @@ $ from google.colab import drive
 $ drive.mount('/content/drive')
 
 - download cuda 9.1:
+  
 !wget --no-clobber https://developer.nvidia.com/compute/cuda/9.1/Prod/local_installers/cuda-repo-ubuntu1704-9-1-local_9.1.85-1_amd64
+
 !wget --no-clobber https://developer.nvidia.com/compute/cuda/9.1/Prod/patches/1/cuda-repo-ubuntu1704-9-1-local-cublas-performance-update-1_1.0-1_amd64
+
 !wget --no-clobber https://developer.nvidia.com/compute/cuda/9.1/Prod/patches/2/cuda-repo-ubuntu1704-9-1-local-compiler-update-1_1.0-1_amd64
+
 !wget --no-clobber https://developer.nvidia.com/compute/cuda/9.1/Prod/patches/3/cuda-repo-ubuntu1704-9-1-local-cublas-performance-update-3_1.0-1_amd64
 
 - install cuda:
 !sudo dpkg -i cuda-repo-ubuntu1704-9-1-local_9.1.85-1_amd64
+
 !sudo dpkg -i cuda-repo-ubuntu1704-9-1-local-compiler-update-1_1.0-1_amd64
+
 !sudo dpkg -i cuda-repo-ubuntu1704-9-1-local-cublas-performance-update-1_1.0-1_amd64
+
 !sudo dpkg -i cuda-repo-ubuntu1704-9-1-local-cublas-performance-update-3_1.0-1_amd64
 
 - move to your file location:
