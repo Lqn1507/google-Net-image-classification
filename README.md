@@ -1,5 +1,6 @@
 # google-Net-image-classification
 Build
+
 Export a new environment variable that points to your local installation of CUDA's CUTLASS v1.3.2 library:
 $ export CUTLASS_INSTALL_DIR=path/to/cutlass
 
@@ -35,6 +36,7 @@ $ drive.mount('/content/drive')
  !pip3 install git+https://github.com/nottombrown/imagenet_stubs
 
 Run
+
 !python3 ./run.py -googlenet
 
 dataset have 1000 images but the code only run 200 images. divide the folder into small folder before run it
